@@ -40,7 +40,7 @@ const SignupForm = () => {
                             placeholder="Your name..."
                         />
                         {formik.touched.firstName && formik.errors.firstName ? (
-                            <div className='text-red-500 mb-4'>{formik.errors.firstName}</div>
+                            <div id='firstNameError' className='text-red-500 mb-4'>{formik.errors.firstName}</div>
                         ) : null}
 
                         <div className='mt-4' />
@@ -56,7 +56,7 @@ const SignupForm = () => {
                             placeholder="Your last name..."
                         />
                         {formik.touched.lastName && formik.errors.lastName ? (
-                            <div className='text-red-500 mb-4'>{formik.errors.lastName}</div>
+                            <div id='lastNameError' className='text-red-500 mb-4'>{formik.errors.lastName}</div>
                         ) : null}
 
                         <div className='mt-4' />
@@ -72,7 +72,7 @@ const SignupForm = () => {
                             placeholder="Email..."
                         />
                         {formik.touched.email && formik.errors.email ? (
-                            <div className='text-red-500 mb-4'>{formik.errors.email}</div>
+                            <div id='mailError' className='text-red-500 mb-4'>{formik.errors.email}</div>
                         ) : null}
 
                         <div className='mt-4' />
